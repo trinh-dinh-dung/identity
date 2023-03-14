@@ -1,0 +1,92 @@
+/*
+  Để tránh conflict với các naming của framework khác hay devs khác sau này,
+  các CSS Custom Properties sẽ được naming với
+  prefix 'e' (dụng ý là viết tắt của Evomes)
+
+  Tìm hiểu CSS Custom Properties:
+  - https://www.w3schools.com/css/css3_variables.asp
+  - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+  - https://www.w3.org/TR/css-variables-1/
+
+  Đọc thêm:
+  - Why we prefer CSS Custom Properties to SASS variables
+  https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables
+  - What is the difference between CSS variables and preprocessor variables?
+  https://css-tricks.com/difference-between-types-of-css-variables/
+*/
+
+:root {
+  /* COLORS */
+  --e-primary: #006699;
+  --e-white: #fff;
+  --e-black: #000;
+  --e-validate-error: #ff0000;
+  --e-overlay: rgba(0, 0, 0, 0.5); /* Màu nền bao quanh khi mở modal */
+  --e-gray-50: #f9fafb;
+  --e-gray-100: #cecece;
+  --e-gray-200: #b9b9b9;
+  --e-gray-300: #979797;
+  --e-gray-400: #515151;
+
+  /* SPACING */
+  /* Spacing thì phần lớn nên dùng Relative Lengths như là rem, em, v.v
+    Đọc thêm:
+    https://stackoverflow.com/questions/45822322/when-to-choose-rem-over-px
+
+    Naming Reference: https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale
+
+    Cách tính theo chuẩn 1rem = 16px:
+    Đổi từ
+    px -> rem: chia 16.
+    rem -> px: nhân 16.
+
+    Ví dụ:
+    100px = 6.25rem
+    3rem = 48px
+
+    Vì hiện tại đang dùng cả Bootstrap nên responsive cho width có thể
+    dùng Grid system như là col-12, col-sm-6, v.v
+  */
+  --e-0\.5: 0.125rem; /* 2px */
+  --e-1: 0.25rem; /* 4px */
+  --e-1\.5: 0.375rem; /* 6px */
+  --e-2: 0.5rem; /* 8px */
+  --e-3: 0.75rem; /* 12px */
+  --e-4: 1rem; /* 16px */
+  --e-5: 1.25rem; /* 20px */
+  --e-6: 1.5rem; /* 24px */
+  --e-7: 1.75rem; /* 28px */
+  --e-8: 2rem; /* 32px */
+  --e-9: 2.25rem; /* 36px */
+  --e-10: 2.5rem; /* 40px */
+  --e-11: 2.75rem; /* 44px */
+  --e-12: 3rem; /* 48px */
+  --e-16: 4rem; /* 64px */
+  --e-20: 5rem; /* 80px */
+  --e-24: 6rem; /* 96px */
+  --e-28: 7rem; /* 112px */
+  --e-32: 8rem; /* 128px */
+  --e-36: 9rem; /* 144px */
+  --e-40: 10rem; /* 160px */
+  --e-44: 11rem; /* 176px */
+  /* ... */
+  --e-96: 24rem; /* 384px */
+
+  /* TYPOGRAPHY */
+  /* Naming Reference: https://tailwindcss.com/docs/font-size */
+  --e-text-xs: 0.75rem; /* 12px */
+  --e-text-sm: 0.875rem; /* 14px */
+  --e-text-base: 1rem; /* 16px*/
+  --e-text-lg: 1.125rem; /* 18px */
+  --e-text-xl: 1.25rem; /* 20px */
+  --e-text-2xl: 1.5rem; /* 24px */
+  --e-text-3xl: 1.875rem; /* 30px */
+  --e-text-4xl: 2.25rem; /* 36px */
+  --e-text-5xl: 3rem; /* 48px */
+
+  /* Naming Reference: https://tailwindcss.com/docs/font-weight */
+  --e-font-thin: 300;
+  --e-font-normal: 400;
+  --e-font-semibold: 600;
+  --e-font-bold: 700;
+}

@@ -1,0 +1,16 @@
+{
+    "users":[
+        {
+            "id":1,
+            "name":"jame",
+            "email":"jame12@gmail.com",
+            "department":"IT"
+        },
+        {
+            "id":1,
+            "name":"layla",
+            "email":"layla12@gmail.com",
+            "department":"Supporter"
+        }
+    ]
+}

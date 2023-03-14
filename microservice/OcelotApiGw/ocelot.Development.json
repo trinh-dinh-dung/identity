@@ -1,0 +1,19 @@
+﻿{
+  "Routes": [
+    // service sso api -- https://localhost:6789/api/identity
+    {
+      "DownstreamPathTemplate": "/api/api-service/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44359"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/api-service/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    }
+  ]
+}
+
+ 

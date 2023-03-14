@@ -1,0 +1,57 @@
+/* Breakpoints sử dụng mixins */
+/* Reference: https://tailwindcss.com/docs/responsive-design */
+
+/* Tablet */
+@mixin tablet {
+  @media screen and (min-width: 640px) {
+    @content;
+  }
+}
+
+/* Larger Tablet */
+@mixin tablet-lg {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+/* Laptop */
+@mixin laptop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+/* Desktop */
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+/* Mobile */
+@mixin mobile {
+  @media screen and (max-width: 639.98px) {
+    @content;
+  }
+}
+
+/* Bất kì style nào muốn dùng breakpoint thì cú pháp dùng như bên dưới */
+@include mobile {
+  /* CSS responsive mobile, width nhỏ hơn 639.98px */
+  /* Hạn chế dùng mixin mobile này, vì nó theo max-width.
+  Nên code theo hướng min-width */
+}
+
+@include tablet {
+  /* CSS responsive tablet, width từ 640px trở lên */
+}
+@include tablet-lg {
+  /* CSS responsive tablet, width từ 768px trở lên */
+}
+@include laptop {
+  /* CSS responsive laptop, width từ 1024px trở lên*/
+}
+@include desktop {
+  /* CSS responsive desktop, width từ 1280px trở lên */
+}

@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "mulishBold";
+  src: url("../../../public/Mulish/Mulish/Mulish-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "mulish";
+  src: url("../../../public/Mulish/Mulish/Mulish-Regular.ttf");
+  font-style: "Regular";
+}
+
+@font-face {
+  font-family: "mulishSemiBold";
+  src: url("../../../public/Mulish/Mulish/Mulish-SemiBold.ttf");
+  font-style: "semibold";
+}
+
+@font-face {
+  font-family: "robotoMeium";
+  src: url("../../../public/Mulish/roboto/Roboto-Medium-webfont.woff");
+  font-style: "medium";
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../../../public/Mulish/roboto/Roboto-Regular-webfont.woff");
+  font-style: "regular";
+}
+
+body,
+html,
+.ant-form-item-control,
+.ant-menu,
+.ant-table,
+.ant-pagination,
+.ant-pagination-item,
+.ant-select-selector,
+.ant-btn,
+.ant-layout,
+.ant-input .label-input {
+  font-family: "mulish" !important;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container-app {
+  max-width: 100%;
+  padding: 16px;
+  margin: 0;
+  height: 100%;
+
+  .main-body {
+    background: white;
+    padding: 10px;
+    margin: 0;
+    height: 100%;
+  }
+}
+
+.form-filter-input {
+  width: 320px;
+  float: left;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9aa4bb;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9aa4bb;
+}
+
+.back-to {
+  height: 55px;
+  display: flex;
+  border-bottom: 0.5px solid lightgray;
+  // margin-bottom: 12px;
+
+  .back-to-page {
+    margin-top: 7px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height, or 154% */
+
+    /* Neutral/Neutral 10 */
+
+    color: #1a1c1e;
+  }
+
+  hr {
+    display: none;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.error {
+  color: #ff4d4f
+}
+
+.onClickTr {
+  td {
+    background-color: #fafafa !important;
+  }
+}

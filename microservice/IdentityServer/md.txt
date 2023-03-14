@@ -1,0 +1,20 @@
+﻿hướng dẫn:
+dotnet ef migrations add Init => tạo migrations, Init tên migrations, đặt tên mới mỗi lần chạy lại => sau cần update lại
+
+
+dotnet ef database update => tạo db => lấy migrations mới nhất
+
+
+list ****************
+
+*** cd [fordel đến project]
+
+dotnet tool install --global dotnet-ef	Cài đặt công cụ dotnet ef
+dotnet tool update --global dotnet-ef	Cập nhật công cụ dotnet ef
+dotnet ef migrations add NameMigration	Tạo một Migration có tên NameMigration
+dotnet ef migrations list	Danh sách các Migration
+dotnet ef database update	Cập nhật Database đến Migration cuối
+dotnet ef database update NameMigration	Cập nhật Database đến Migration có tên NameMigration
+dotnet ef migrations remove	Xóa migration cuối
+dotnet ef migrations script --output migrations.sql	Xuất lệnh SQL khi thực hiện Migration
+dotnet ef database drop -f	Xóa database
