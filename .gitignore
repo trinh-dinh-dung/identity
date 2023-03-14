@@ -1,0 +1,16 @@
+bin
+obj
+config
+.vs
+node_modules
+ignore-hot
+*.lock
+*.user
+src-scripts
+.vscode
+*.bundle.js
+bundles
+uploads
+ 
+ 
+ 
